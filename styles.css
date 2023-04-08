@@ -1,53 +1,55 @@
-.logo {
-  margin-left: 5rem;
-  padding-bottom: 1rem;
+body {
+  margin: 0;
+}
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.icon {
   width: 15rem;
 }
-.navbar-nav {
-  display: flex;
-  margin-left: 15rem;
-  justify-content: space-around;
-  width: 50%;
+.topnav {
+  overflow: hidden;
 }
-#head {
+.topnav a {
+  float: left;
+  display: block;
   color: #0087d9;
-  font-size: 1.2rem !important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-#head:hover {
+.topnav a:hover {
   color: #c50000;
 }
-.banner {
-  margin-left: 0px !important;
+.home-responsive {
+  max-width: 100%;
+  height: auto;
 }
-.welcome-tag {
+.home-third-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.home-welcome-tag {
   color: #0087d9;
+  font-size: 18px;
+  text-align: center;
 }
-.para {
+.home-para {
   color: #666666;
   font-size: 14px;
+  text-align: justify;
 }
-.welcome-para {
+.home-welcome-para {
   background-color: #f4f4f4;
   border: 1px solid #f1f1f1;
   margin: 2rem 0 !important;
   padding: 1rem 2rem !important;
-  width: 90% !important;
-}
-.services {
-  color: #0087d9;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-.service-tags {
-  color: #0087d9;
-  font-size: 14px;
-  text-align: center;
-}
-.service-para {
-  font-size: 14px;
-  margin: 2rem 0rem !important;
-  text-align: justify;
-  width: 80%;
+  width: 80% !important;
 }
 .home-footer {
   align-items: center;
@@ -55,12 +57,42 @@
   display: flex;
   height: 4rem;
   justify-content: center;
+  width: 100%;
 }
 .copyright {
   color: #f2f2f2;
+  text-align: center;
 }
-@media only screen and (max-width: 425px) {
-  .logo {
-    margin-left: 0 !important;
+.home-fourth-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.home-side {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.home-sub-image {
+  width: 50%;
+}
+.home-sub-para {
+  text-align: justify;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-sub-para {
+    font-size: 12px;
   }
 }

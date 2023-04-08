@@ -7,53 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bliss Travel Agency</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./images/logo.png" class="img-fluid logo" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" id="head" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="head" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="head" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="head" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <div class="navbar">
+      <img src="./images/logo.png" alt="logo" class="icon">
+      <div class="topnav" id="myTopnav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
       </div>
-    </nav>
+    </div>
   </header>
   <section>
     <div class="background-image">
-      <img src="./images/banner.jpg" class="img-fluid logo w-100 banner" alt="Banner">
+      <img src="./images/banner.jpg" alt="Banner" class="home-responsive">
     </div>
   </section>
-  <section class="third-section d-flex flex-column align-items-center container-fluid">
-    <h4 class="welcome-tag">Welcome To Bliss Travels & Tours™ (PVT) LTD - The Best Travel Agency</h4>
-    <div class="welcome-para container-fluid">
-      <p class="para">We are a full-service best travel agency with a dedicated team of highly skilled and experienced
+  <section class="home-third-section">
+    <h4 class="home-welcome-tag">Welcome To Bliss Travels & Tours™ (PVT) LTD - The Best Travel Agency</h4>
+    <div class="home-welcome-para">
+      <p class="home-para">We are a full-service best travel agency with a dedicated team of highly skilled and
+        experienced
         people to
         assist our valuable clients according to their goals and desired journeys all over the world. We at Bliss
         travels and tours strive our best to deliver the outstanding service to all our customers. We are always ready
@@ -63,50 +40,26 @@
         travel with us and so “You Can Buy Yourself The Freedom” that would make us feel honored.</p>
     </div>
   </section>
-  <section class="fourth-section d-flex flex-column align-items-center">
-    <h4 class="services">Services We Offer...</h4>
-    <div class="service-images container">
-      <div class="row">
-        <div class='col-4 col-md-2 d-flex flex-column align-items-center'>
-          <img src="./images/ticket.png" class="img-fluid" alt="ticket">
-          <p class="service-tags">Air Ticketing</p>
-        </div>
-        <div class='col-4 col-md-2 d-flex flex-column align-items-center'>
-          <img src="./images/visa.png" class="img-fluid" alt="visa">
-          <p class="service-tags">Visa</p>
-        </div>
-        <div class='col-4 col-md-2 d-flex flex-column align-items-center'>
-          <img src="./images/packages.png" class="img-fluid" alt="packages">
-          <p class="service-tags">Hajj/Umrah Packages</p>
-        </div>
-        <div class='col-4 col-md-2 d-flex flex-column align-items-center'>
-          <img src="./images/honeymoon.png" class="img-fluid" alt="honeymoon">
-          <p class="service-tags">HoneyMooners</p>
-        </div>
-        <div class='col-4 col-md-2 d-flex flex-column align-items-center'>
-          <img src="./images/ground.png" class="img-fluid" alt="ground">
-          <p class="service-tags">Ground Services</p>
-        </div>
-        <div class='col-4 col-md-2 d-flex flex-column align-items-center'>
-          <img src="./images/consult.png" class="img-fluid" alt="consult">
-          <p class="service-tags">Traveling Consultancy</p>
-        </div>
-      </div>
+  <section class="home-fourth-section">
+    <div class="home-side">
+      <img src="./images/dubai.jpg" alt="Dubai" class="home-sub-image">
+      <p class="home-sub-para">The attractiveness of tourism in Dubai is based on shopping and on the historical and
+        contemporary attractions
+        in it, and it is known as the shopping capital of the Middle East, as it has the most luxurious hotels and
+        resorts in the Middle East in addition to being home to many of the best tourist places in the UAE that attract
+        families from different parts the world.</p>
     </div>
-    <div class="container-fluid d-flex justify-content-center">
-      <p class="service-para">We developed good trade relationships with accommodation and hotel
-        wholesalers,
-        specialist
-        airfare consolidators,
-        leading airlines and major tour operators throughout the world. As a highly respected, professional and
-        well-established, Bliss Travels & Tours offers the cheapest air tickets of the whole world including Australia,
-        Europe, Africa, the whole of Asia and the Middle East countries. Like our cheap flight offers, our vast
-        accommodation network also supports us to provide record lower hotel and resort rates to our customers
-        throughout
-        the world.</p>
+    <div class="home-side">
+      <img src="./images/dubai1.jpg" alt="Dubai" class="home-sub-image">
+      <p class="home-sub-para">If you are thinking about tourism in Dubai, you must be confused about which hotels to
+        choose and which suit
+        your interests, whether in terms of location, service, or even prices.The city of Dubai includes many different
+        hotels, and hotels in Dubai are among the best hotels in the United Arab Emirates. We offer you a comprehensive
+        guide that includes the best tried and recommended hotels in Dubai, in addition to hotel apartments, villas, and
+        more.</p>
     </div>
   </section>
-  <footer class="home-footer container-fluid">
+  <footer class="home-footer">
     <p class="copyright">©2023 Bliss Travels & Tours - All rights reserved.</p>
   </footer>
 </body>
