@@ -1,5 +1,14 @@
 body {
+  align-items: center;
+  background-color: #0087d9;
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  width: 100%;
+}
+.body {
+  background-color: white;
+  width: 960px;
 }
 .navbar {
   align-items: center;
@@ -7,7 +16,8 @@ body {
   justify-content: space-around;
   margin-bottom: 1rem;
 }
-.icon {
+.about-icon {
+  object-fit: cover;
   width: 15rem;
 }
 .topnav {
@@ -77,28 +87,36 @@ body {
   width: 50%;
 }
 .home-sub-image {
-  width: 50%;
+  width: 60%;
 }
 .home-sub-para {
   text-align: justify;
-  width: 50%;
+  width: 58%;
 }
 .about-section {
   display: flex;
   justify-content: space-around;
   justify-self: center;
-  margin-top: 5rem;
+  padding: 25px;
   width: 90%;
 }
 .about-img {
-  width: 30%;
+  align-self: center;
+  height: 50%;
+  width: 50%;
 }
 .about-para {
   text-align: justify;
   width: 30%;
 }
+.gallery-section {
+  padding: 25px;
+}
 .gallery-img {
-  width: 40%;
+  width: 30%;
+}
+.contact-section {
+  padding: 24px;
 }
 input[type='text'],
 select,
@@ -122,6 +140,9 @@ input[type='submit'] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+}
+input[type='submit']:hover {
+  background-color: #025c94;
 }
 .container {
   border-radius: 5px;
@@ -155,10 +176,28 @@ input[type='submit'] {
   .home-sub-para {
     font-size: 12px;
   }
+  .about-section {
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-img {
+    width: 60%;
+  }
+  .about-para {
+    width: 58%;
+  }
   .col-25,
   .col-75,
   input[type='submit'] {
     width: 100%;
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 959px) {
+  body {
+    background-color: white;
+  }
+  .body {
+    width: 100%;
   }
 }
